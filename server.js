@@ -1,0 +1,16 @@
+const express = require('express');
+const app = express();
+
+const port = process.env.PORT || 5050;
+
+app.get('/', (req, res) => {
+  res.send(`
+    <h1>Bienvenue sur mon site Node.js hébergé sur le Cloud</h1>
+    <p>Nom : IMENE AYED </p>
+    <p>Déploiement réalisé avec GitHub et Render</p>
+  `);
+});
+
+app.listen(port, '0.0.0.0', () => {
+  console.log(`Application démarrée sur le port ${port}`);
+});
