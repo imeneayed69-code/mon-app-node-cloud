@@ -5,7 +5,7 @@ const port = process.env.PORT || 5050;
 
 app.get('/', (req, res) => {
   res.send(`
-    <h1>Bienvenue sur mon site Node.js hébergé sur le Cloud</h1>
+   <h1>Version 2 : application mise à jour sur le Cloud</h1>
     <p>Nom : IMENE AYED </p>
     <p>Déploiement réalisé avec GitHub et Render</p>
   `);
